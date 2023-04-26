@@ -12,7 +12,7 @@ const Header = ()=>{
             </div>
             <div>
             <ul className="menu">
-                <li className="menuItem"><Link to="/home" className="menuLink">HOME</Link></li>
+                <li className="menuItem"><Link to="/" className="menuLink">HOME</Link></li>
                 <li className="menuItem"><Link to="/committee" className="menuLink">PROGRAM COMMITTEE</Link></li>
                 <li className="menuItem"><Link to="/accept" className="menuLink">ACCEPT</Link></li>
                 <li className="menuItem"><Link to="/evaluation" className="menuLink">EVALUATION</Link></li>
