@@ -1,0 +1,31 @@
+.guestLogin{
+    /* border: 1px solid black; */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.guestContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../../assets/bg6.jpg");
+    background-size: cover;
+}
+.radioLabel{
+    margin-left: 10px;
+}
+.pay{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+}
+.payBtn{
+    padding: 10px 30px;
+    background-color: #006747;
+    border: 1px solid #006747;
+    color: #fff;
+    border-radius: 5px;
+}

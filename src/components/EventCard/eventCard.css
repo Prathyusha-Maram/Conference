@@ -1,0 +1,50 @@
+.eventCard{
+    width: 120px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 8px;
+}
+/* .eventCard::after{
+    content: " ";
+    width: 200px;
+    height: 150px;
+    background-image: linear-gradient(to bottom, #fff,#333);
+    opacity: 0.6;
+    position: absolute;
+    /* z-index: -1; */
+    /* top: 0; */
+
+/* }  */
+.eventTitle{
+    color: #fff;
+    font-size: 15px;
+}
+.eventsInfo{
+    display: flex;
+    flex-direction: column;
+    height:150px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.exploreBtn{
+    margin-top: 10px;
+}
+.exploreMoreLink{
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 8px;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+   
+
+}
+.exploreMoreLink:hover{
+    padding: 7px 23px;
+    color: #000;
+}

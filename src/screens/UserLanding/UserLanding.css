@@ -1,0 +1,63 @@
+.authorInfoContainer{
+    display: flex;
+    gap: 2rem;
+    height: 55vh;
+    align-items: center;
+    justify-content: space-around;
+    margin:4rem 7rem;
+    /* border: 1px solid black; */
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.authorInfoImage{
+    border:1px solid black;
+    border-radius: 6rem;
+}
+.authorImage{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 6rem;
+}
+.authorInfoHeading{
+    font-weight: bolder;
+}
+.editInfoContainer{
+    margin-top: 2rem;
+    transition: all 0.4s ease;
+    transform-origin: bottom left;
+}
+.editInfoContainer:hover{
+    transform: scale(1.1);
+}
+.editInfo{
+    text-decoration: none;
+    padding:0.7rem 2rem;
+    color: #fff;
+    background-color: #006747;
+}
+.editInfo:hover{
+    color: #fff;
+}
+.authorOptionsContainer{
+    margin:5rem 8rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 1.5rem;
+    /* justify-content: center; */
+
+}
+/* .authorOptionsContainer:last-child(){
+    justify-self: center;
+} */
+.authorOptions1,
+.authorOptions2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.authorOptions2{
+    /* margin-bottom: 4rem; */
+    padding-bottom: 4rem;
+}

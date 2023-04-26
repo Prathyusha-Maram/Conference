@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.logoBox {
+    display: flex;
+    align-items: center;
+}
+
+.nwlogo {
+    height: 12vh;
+    margin-left: 50px;
+}
+
+.logoName {
+    font-family: "roboto-condensed", "Arial Narrow Bold", Arial, sans-serif;
+    color: #006747;
+    font-weight: 800;
+    font-size: 30px;
+    margin-top: auto;
+    padding: 9.5vh 15px 8vh 15px;
+}
+
+.nwlogo:hover {
+    background-color: #006747;
+    color: #fff;
+}
+
+.logoName:hover {
+    background-color: #006747;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+}
+
+.menuLink {
+    text-decoration: none;
+    color: #006747;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.menuItem {
+    list-style: none;
+    margin-right: 15px;
+    padding: 9.5vh 15px 8vh 15px;
+}
+
+.menuItem:hover {
+    background-color: #006747;
+}
+
+.menuItem:hover .menuLink {
+    color: #fff;
+}

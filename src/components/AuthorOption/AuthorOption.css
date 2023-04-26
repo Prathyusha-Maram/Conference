@@ -1,0 +1,26 @@
+.authorOptionContainer{
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 20rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.authorOptionImage{
+    width: 5rem;
+    height: 5rem;
+}
+.authorOptionTitle{
+    margin-left: 1rem;
+}
+.authorOptionContainer:hover{
+    transform: scale(1.05);
+}
+
+/* .authorOptionContainer:hover{
+    background-color: #006747;
+    color: #fff;
+} */

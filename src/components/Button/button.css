@@ -1,0 +1,14 @@
+.greenBtn{
+    width:350px;
+    background-color:#006747;
+  
+    border:none;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.greenBtnLink{
+    text-decoration: none;  color:#fff;
+}
+.greenBtnLink:hover{
+    color: #fff;
+}

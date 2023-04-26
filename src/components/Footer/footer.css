@@ -1,0 +1,36 @@
+.footer {
+    background-color: #404041;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 40px;
+    color: #fff;
+    /* margin: 60px 0 0 0; */
+}
+
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    height: 30vh;
+    width: 70vh;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.abouticon {
+    display: flex;
+}
+
+.iconName {
+    margin-left: 10px;
+}
+
+.icon:hover {
+    color: #006747;
+}

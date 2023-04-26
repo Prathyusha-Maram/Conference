@@ -1,0 +1,40 @@
+.landingImage{
+width: 100%;
+height: 90vh;
+background-position: right;
+background-size: cover;
+/* background-image: url('../../assets/headerImage.jpg'); */
+
+clip-path: polygon(0% 0%,55% 0%,45% 100%,0% 100%);
+}
+.landing{
+    
+position:relative;
+}
+.landingBox{
+    background-color: #006747;
+    position: absolute;
+    height: 90vh;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    clip-path: polygon(55% 0%,100% 0%,100% 100%,45% 100%);
+    
+}
+.landingTitle{
+    color: white;
+    font-size: 35px;
+    margin-left: 60%;
+    text-transform: uppercase;
+    margin-top: 10%;
+    font-weight: bolder;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 2;
+
+}
+.landingTItleSpan::after{
+    content: "\a";
+    white-space: pre;
+}

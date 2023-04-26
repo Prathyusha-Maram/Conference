@@ -1,0 +1,88 @@
+.about{
+    display: flex;
+    margin: 80px;
+    justify-content: space-around;
+}
+
+.aboutLeft{
+    width: 40%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: start; */
+}
+.aboutTitle{
+    color: #006747;
+    font-size: 40px;
+    font-weight: 900;
+}
+.aboutImage{
+    height: 25em;
+}
+.knowMore{
+    margin-top: 20px;
+    
+}
+.knowMoreLink{
+    text-decoration: none;
+    background-color: #e1e1e1;
+    color: #006747;
+    padding:0.6em 1.6em;
+    font-size: 1em;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.4s ease;
+    
+}
+.knowMoreLink:hover{
+    background-color:#006747 ;
+    color:#fff;
+}
+
+.countBox{
+    display: flex;
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/count.jpg");
+    background-attachment: fixed;
+    justify-content: space-around;
+    height: 60vh;
+    color: #fff;
+    background-size: cover;
+    align-items: center;
+}
+.count{
+    font-size: 60px;
+}
+.paperCount{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.countDescription{
+    font-size: 20px;
+}
+/* .knowMoreLink::after{
+    content: "";
+    /* color: #b6b7ba; 
+    color:red;
+    width: 5px;
+    top:0;
+    left:0;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+.knowMoreLink:hover .konwMoreLink::after{
+    width: 100%;
+} */
+/* .knowMoreHover{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    /* color: #B6B7BA;
+     */
+     /* color:red;
+    width:5px;   */
+    /* height: 12px; */
+/* }  */

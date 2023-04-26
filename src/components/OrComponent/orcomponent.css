@@ -1,0 +1,27 @@
+/* .or::before{
+content:"-";
+width:150px;
+height:5px;
+color: #333;
+}
+.or::after{
+    content:"-";
+    width:150px;
+    height:5px;
+    color: #333;
+    } */
+    /* .or{
+        color: #222;
+    } */
+
+.or{
+    display: flex;
+    align-items: center;
+    
+}
+.line{
+width:150px;
+height:1px;
+background-color: #ccc;
+margin-bottom:12px ;
+}

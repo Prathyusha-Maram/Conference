@@ -1,0 +1,221 @@
+.main {
+    transition: all 1s;
+    padding: 100px;
+    width: 100%;
+    text-align: center;
+    display: 'flex';
+    justify-content: 'center';
+    align-items: center;
+    background-color: rgb(38, 49, 75);
+    /* background: linear-gradient(130deg, #3b518f, #6563db, #1122bb);
+    background-size: 200% 200%;
+    animation: Animation 5s ease infinite; */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* net */
+
+.error {
+    color: #fc8181 !important;
+    font-size: 0.75rem !important;
+    text-align: left !important;
+    border-color: #fc8181 !important;
+    margin-top: 0.25rem !important;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.form {
+    width: 95%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.paper label {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin: 1rem 0 0.2rem;
+}
+
+.paper input,
+.paper select,
+.paper textarea {
+    width: 100%;
+    padding: 0.65rem 0.5rem;
+    font-size: 1rem;
+    color: white;
+    border: 2px solid #4a5568;
+    background-color: #2d3748;
+    border-radius: 10px;
+    outline: none;
+}
+
+.paper input:focus,
+.paper select:focus {
+    border-color: #4299e1;
+}
+
+.paper input::placeholder,
+.paper textarea::placeholder,
+.paper select::placeholder {
+    color: #a0aec0;
+}
+
+.paper input[type="checkbox"] {
+    width: fit-content;
+    margin-left: 20px;
+    transform: scale(2);
+}
+
+.papers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.block {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    min-width: 400px;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.new {
+    color: red;
+    margin: 5px;
+}
+
+.topic {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+}
+
+.topicrow {
+    flex: 1;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+    border-radius: 10px;
+    flex-wrap: nowrap;
+    margin: 5px;
+}
+
+.no {
+    margin-top: 50px;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.topicrow>div {
+    width: 100%;
+}
+
+.searchInput {
+    width: 350px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.searchInput:focus {
+    transition: all 0.3s;
+    box-shadow: 0px 0px 5px white;
+    width: 430px;
+    outline: none;
+    padding: 10px 20px;
+    transform: scale(1.03);
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.searchInput::placeholder {
+    text-align: center;
+}
+
+.topicrow a {
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0.35rem 0.5rem;
+    background-color: #4299e1;
+    color: #f8faff;
+    border: none;
+    border-radius: 30px;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.topicrow a:hover {
+    transition: all 0.3s;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0.35rem 0.5rem;
+    background-color: white;
+    border: 1px solid #4299e1;
+    color: #4299e1;
+    border-radius: 30px;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button {
+    display: block;
+    margin: 1rem 0;
+    padding: 0.35rem 0.5rem;
+    background-color: #4299e1;
+    color: #1a202c;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .topicrow {
+        flex: 1;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        padding: 10px 20px;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        margin: 5px;
+    }
+    .topicrow>div {
+        margin: 5px;
+    }
+}
