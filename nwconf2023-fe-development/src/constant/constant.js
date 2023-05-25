@@ -1,1 +1,1 @@
-export const API_ENDPOINT = "http://localhost:10000/api";
+export const API_ENDPOINT = "https://nwconference-1pzn.onrender.com/api";
