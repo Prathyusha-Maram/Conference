@@ -277,15 +277,19 @@ const PostReview = () => {
         {
           wantToReview === "Yes" ? 
           ( */}
+          {state.userDetails.document !== "" ? (
         <div className="dwn-btn">
           <Link to={pdfFile} target="_blank" download className="download">
             Download
           </Link>
         </div>
+        ) : null
 
-        {state.poster !== "" ? (
+      }
+
+        {state.userDetails.poster !== undefined ? (
           <div className="dwn-btn">
-            <Link to={state.poster} target="_blank" download className="download">
+            <Link to={state.userDetails.poster} target="_blank" download className="download">
               Download
             </Link>
           </div>

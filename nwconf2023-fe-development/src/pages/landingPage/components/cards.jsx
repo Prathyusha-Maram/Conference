@@ -1,4 +1,8 @@
-import React from 'react'
+// import React from 'react'
+// import { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { API_ENDPOINT } from "../../../constant/constant";
 import Cloudcomputing from "../../../images/cloudcomputing.png"
 import BlockChain from "../../../images/blockchain.jpg"
 import BigData from "../../../images/bigdata.jpg"
@@ -18,7 +22,14 @@ import BillGates from "../../../images/speaker.jpg"
 import Fb from "../../../images/fb.png"
 import Linkdin from "../../../images/linkdin.png"
 import Msg from "../../../images/msg.png"
-const cards = () => {
+const Cards = () => {
+
+    const [reviewerEmail, setReviewerDetails] = useState([]);
+    useEffect(() => {
+        axios
+          .get(`${API_ENDPOINT}/admin/reviewers`)
+          .then((response) => setReviewerDetails(response.data));
+      }, []);
 
     const data = [
         {
@@ -78,50 +89,53 @@ const cards = () => {
             link: "https://en.wikipedia.org/wiki/Cyber-security_regulation"
         },
     ]
-    const Users = [
-        {
-            name: "Derik",
-            role: "CEO, XYZ",
-            image: Derik
-        },
-        {
-            name: "Jamal Hussain",
-            role: "Managing Director, ABC",
-            image: Jamal
-        },
-        {
-            name: "Tessie",
-            role: "Blockchain professor, JHG",
-            image: Tessie
-        },
-        {
-            name: "Jay shetty",
-            role: "Cloud specialist, AWS",
-            image: Jay
-        },
-        {
-            name: "Amanda",
-            role: "Phd, Some university",
-            image: Amanda
-        },
-        {
-            name: "Bill Gates",
-            role: "ML professor, FJH",
-            image: Brooke
-        },
-        {
-            name: "Brooke",
-            role: "CEO, DEF",
-            image: Elon
-        },
 
-        {
-            name: "Elon musk",
-            role: "ML professor, FJH",
-            image: BillGates
-        },
+    
 
-    ]
+    // const Users = [
+    //     {
+    //         name: "Derik",
+    //         role: "CEO, XYZ",
+    //         image: Derik
+    //     },
+    //     {
+    //         name: "Jamal Hussain",
+    //         role: "Managing Director, ABC",
+    //         image: Jamal
+    //     },
+    //     {
+    //         name: "Tessie",
+    //         role: "Blockchain professor, JHG",
+    //         image: Tessie
+    //     },
+    //     {
+    //         name: "Jay shetty",
+    //         role: "Cloud specialist, AWS",
+    //         image: Jay
+    //     },
+    //     {
+    //         name: "Amanda",
+    //         role: "Phd, Some university",
+    //         image: Amanda
+    //     },
+    //     {
+    //         name: "Bill Gates",
+    //         role: "ML professor, FJH",
+    //         image: Brooke
+    //     },
+    //     {
+    //         name: "Brooke",
+    //         role: "CEO, DEF",
+    //         image: Elon
+    //     },
+
+    //     {
+    //         name: "Elon musk",
+    //         role: "ML professor, FJH",
+    //         image: BillGates
+    //     },
+
+    // ]
     return (
         <div>
             <div className='first-card-container'>
@@ -131,6 +145,7 @@ const cards = () => {
                     <p>Paper Submission Deadline:<span style={{ color: "red" }}> August 20, 2023</span></p>
                     <p>Authors Notification: <span style={{ color: "red" }}>Septembert 5, 2023</span></p>
                     <p>Accept/Reject Paper: <span style={{ color: "red" }}>September 24, 2023</span></p>
+                    <p>Payment after acceptance: <span style={{ color: "red" }}>September 29, 2023</span></p>
                     <p>Conference on <span style={{ color: "red" }}>October 12 , 2023</span></p>
                     {/* <div className='my-btn'>
                         <button className='card-btn'>KNOW MORE</button>
@@ -198,23 +213,17 @@ const cards = () => {
                         <h1>COMMITTEE MEMBERS</h1>
                     </div>
                     <div className="third-con">
-                    {Users.map(product => (
+                    {reviewerEmail.data?.map(product => (
                         <>
                        
                         <div className="third-card-image">
-                               <div className="third-dp-img">
-                               <img src={product.image} alt="" />
-                               </div>
+                               
                                 <div className="third-img-con">
-                                    <h4 className='third-p'>{product.name}</h4>
-                                    <p className='third-btn'> {product.role}</p>
+                                    <h4 className='third-p'>{product.firstName + " " + product.lastName}</h4>
+                                    <p className='third-btn'> {product.areaOfInterest}</p>
 
                                 </div>
-                                {/* <div className="social-icon">
-                                    <img src={Fb} alt="" />
-                                    <img src={Linkdin} alt="" />
-                                    <img src={Msg} alt="" />
-                                </div> */}
+                               
                             </div>
                        
                        
@@ -233,4 +242,4 @@ const cards = () => {
     )
 }
 
-export default cards
+export default Cards

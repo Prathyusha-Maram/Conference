@@ -448,12 +448,12 @@ export default function FullWidthTabs() {
                   <div className="table-con">
                     <Paper
                       sx={{
-                        width: "70%",
+                        width: "90%",
                         overflow: "hidden",
                         marginTop: "30px",
                       }}
                     >
-                      <TableContainer sx={{ maxHeight: 440 }}>
+                      <TableContainer sx={{ maxHeight: 600 }}>
                         <Table stickyHeader aria-label="sticky table">
                           <TableHead>
                             <TableRow>
@@ -494,18 +494,19 @@ export default function FullWidthTabs() {
                                     </TableCell>
                                     <TableCell>{row.abstract}</TableCell>
                                     <TableCell>
-                                      {" "}
+                                    { row.document !== undefined ? (
                                       <Link
-                                        to={row.document}
+                                        to={row.document }
                                         target="_blank"
                                         download
                                         className="download"
                                       >
                                         Download
-                                      </Link>
+                                      </Link>) : null
+                                      }
                                     </TableCell>
                                     <TableCell>
-                                      { row.poster !== "" ? (
+                                      { row.poster !== undefined ? (
                                         <Link
                                           to={row.poster}
                                           target="_blank"

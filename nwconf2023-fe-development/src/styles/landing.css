@@ -693,14 +693,21 @@ margin-left: 130px;
     background-color: #006747;
     padding: 4px 20px;
     border-radius: 6px;
-    width: 100px;
+    width:fit-content;
     text-align: center;
 }
 .staus-wrap{
     display: flex;
-    width: 400px;
-    justify-content: space-between;
+    width: 100%;
+    /* justify-content: space-between; */
 }
+.button-container {
+    display: flex;
+    align-items: center;
+  }
+  .button-container button {
+    margin-right: 10px;
+  }
 .status-card{
  padding: 15px 0px;
 

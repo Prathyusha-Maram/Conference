@@ -16,7 +16,10 @@ const navbar = () => {
                    <div className='lsit-set'>
                    <li><NavLink to="/" className="nav-link">HOME</NavLink></li>
                    <li> <NavLink to="/ProgramCommity" >PROGRAM COMMITTEE</NavLink></li>
-                   <li> <NavLink to="/Accept">ACCEPT</NavLink></li>
+                   <li> <NavLink to="#" >REGISTRATION</NavLink></li>
+                   <li> <NavLink to="#" >VENUE</NavLink></li>
+                   <li> <NavLink to="#" >CONTACT DETAILS</NavLink></li>
+                   {/* <li> <NavLink to="/Accept">ACCEPT</NavLink></li> */}
                    {/* <li>  <NavLink to="/Evaluation">EVALUATION</NavLink></li> */}
                    <li>  <NavLink to="/Login">LOGIN</NavLink></li>
               

@@ -14,26 +14,26 @@ const CheckStatus = () => {
         <>
           <>
             <div className="first-coon">
-              <div className="staus-wrap">
+              <div className="status-wrap" style={{ display: "flex", alignItems: "center" }}>
                 <p>Overall Approval Status</p>
-                <p>
-                  {state?.approved === "Approved" ? (
-                    <>
-                      <p className="approved">Approved</p>
-                      {state?.payementStatus === "" ? (
-                        <>
-                          <button onClick={payment} >Payment to attend conference</button>
-                        </>
-                      ) : (<p className="approved">Thanks for completing registration</p>)
-                      }
-                    </>
-                  ) : state?.approved === "Rejected" ? (
-                    <p className="approved" style={{ background: "red" }}>Rejected</p>
-                  ) : (
-                    <p className="approved" style={{ background: "#F6BE00" }}>Pending</p>
-                  )}
-                </p>
+                {state?.approved === "Approved" ? (
+                  <>
+                    <p className="approved">Approved</p>
+                    {state?.paymentStatus === "" ? (
+                      <>
+                        <button onClick={payment} style={{ marginLeft: "10px" }}>Payment to attend conference</button>
+                      </>
+                    ) : (
+                      <p className="approved">Thanks for completing registration</p>
+                    )}
+                  </>
+                ) : state?.approved === "Rejected" ? (
+                  <p className="approved" style={{ background: "red", marginLeft: "10px" }}>Rejected</p>
+                ) : (
+                  <p className="approved" style={{ background: "#F6BE00", marginLeft: "10px" }}>Pending</p>
+                )}
               </div>
+
             </div>
             {state?.reviewerApproval.map((element) => {
               return (
