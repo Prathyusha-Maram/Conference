@@ -42,7 +42,7 @@ const signup = async (req, res) => {
             updatedAt: Date.now(),
             areaOfInterest,
             wantToAttend: false,
-            payementStatus: "",
+            payementStatus: "NOT COMPLETED",
             submisstionType: "user",
           };
           let user = await db.collection("user").doc(email).set(data);
