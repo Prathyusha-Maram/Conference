@@ -49,7 +49,7 @@ const signup = async (req, res) => {
           let user = await db.collection("student").doc(email).set(data);
           if (user) {
             res.json({ message: "user saved succesfully", status: true });
-            // sentRegistrationSuccess(email);
+            sentRegistrationSuccess(email);
           } else {
             res.json({ message: "user not saved", status: false });
           }
@@ -160,7 +160,7 @@ const project = async (req, res) => {
           .doc(email)
           .set(data, { merge: true });
         if (upload) {
-          // sendAuthorMail(email);
+          sendAuthorMail(email);
           res.json({ message: "Project saved succesfully", status: true });
         } else {
           res.json({ message: "Project not saved", status: false });
@@ -256,7 +256,7 @@ const payment = async (req, res) => {
       .set(data, { merge: true });
     if (upload) {
       res.json({ message: "Guest saved succesfully", status: true });
-      // sentGuestInvation(email);
+      sentGuestInvation(email);
     } else {
       res.json({ message: "Guest not saved", status: false });
     }

@@ -2,7 +2,7 @@ const nodemailer = require("nodemailer");
 
 const sendAuthorMail = async (mail, document, title, paperID) => {
   const body = {
-    from: "conference2023@naveenrio.me",
+    from: "conference2023@nwconf.me",
     to: mail,
     subject: `Paper submitted`,
     html: 
@@ -50,7 +50,7 @@ const sendAuthorMail = async (mail, document, title, paperID) => {
 
 const sendReviewerNotifyMail = async (email, title, paperID) => {
   const body = {
-    from: "conference2023@naveenrio.me",
+    from: "conference2023@nwconf.me",
     to: email,
     subject: `New paper assigned for review`,
     html: `<div> 
@@ -87,7 +87,7 @@ const sendReviewerNotifyMail = async (email, title, paperID) => {
 
 const sendPaperResponse = async (email, approved, title, paperID) => {
   const body = {
-    from: "conference2023@naveenrio.me",
+    from: "conference2023@nwconf.me",
     to: email,
     subject: `Paper Status`,
     html:
@@ -149,7 +149,7 @@ const sendPaperResponse = async (email, approved, title, paperID) => {
 
 const needReviewAuthor = async (email) => {
   const body = {
-    from: "conference2023@naveenrio.me",
+    from: "conference2023@nwconf.me",
     to: email,
     subject: `Paper Status`,
     html: `<div>Your Paper has been Accepted but Need Review</div>`,
@@ -175,7 +175,7 @@ const needReviewAuthor = async (email) => {
 
 const sentGuestInvation = async (email) => {
   const body = {
-    from: "conference2023@naveenrio.me",
+    from: "conference2023@nwconf.me",
     to: email,
     subject: `Northwest Conference`,
     html: `<div>
@@ -212,7 +212,7 @@ const sentGuestInvation = async (email) => {
 
 const sentRegistrationSuccess = async (email) => {
   const body = {
-    from: "conference2023@naveenrio.me",
+    from: "conference2023@nwconf.me",
     to: email,
     subject: `Northwest Conference`,
     html: `<div>
@@ -248,7 +248,7 @@ const sentRegistrationSuccess = async (email) => {
 
 const thanksForReview = async (email) => {
   const body = {
-    from: "conference2023@naveenrio.me",
+    from: "conference2023@nwconf.me",
     to: email,
     subject: `Paper Reviewed`,
     html: `<div>
@@ -284,7 +284,7 @@ const thanksForReview = async (email) => {
 
 const reviewerApproved = async (email) => {
   const body = {
-    from: "conference2023@naveenrio.me",
+    from: "conference2023@nwconf.me",
     to: email,
     subject: `Northwest Conference : Approved....!!!!!!!`,
     html: `<div>
@@ -321,7 +321,7 @@ const reviewerApproved = async (email) => {
 
 const reviewerRejected = async (email) => {
   const body = {
-    from: "conference2023@naveenrio.me",
+    from: "conference2023@nwconf.me",
     to: email,
     subject: `Northwest Conference : Rejected`,
     html: `<div>
