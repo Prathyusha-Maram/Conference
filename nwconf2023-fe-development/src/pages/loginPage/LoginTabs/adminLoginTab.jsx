@@ -283,7 +283,7 @@ export default function FullWidthTabs() {
   }
 
   function sendReviewList(product) {
-    if ((postUserEmail !== product.email) && (postGroupEmail !== product.email) && product.numberOfPapersAssigned < 3) {
+    if ((postUserEmail !== product.email) && (postGroupEmail !== product.email) && product.numberOfPapersAssigned < 3 && product.acceptedByChair) {
       index++;
       return (
         <>

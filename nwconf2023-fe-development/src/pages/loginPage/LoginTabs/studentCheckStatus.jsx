@@ -20,9 +20,9 @@ const CheckStatus = () => {
                   {state?.approved === "Approved" ? (
                     <>
                       <p className="approved">Approved</p>
-                      {state?.payementStatus === "" ? (
+                      {state?.payementStatus === "NOT COMPLETED" ? (
                         <>
-                          <button onClick={payment} >Payment to attend conference</button>
+                          <button type = "button" className="btn btn-warning" onClick={payment} style={{ marginLeft: "10px", color:"white" }}>Payment to attend conference</button>
                         </>
                       ) : (<p className="approved">Thanks for completing registration</p>)
                       }
