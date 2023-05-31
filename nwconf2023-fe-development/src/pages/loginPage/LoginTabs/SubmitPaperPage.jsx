@@ -184,7 +184,7 @@ const SubmitPaperPage = () => {
   useEffect(() => {
     GetApi();
     const currentDate = new Date();
-    const targetDate = new Date("2023-05-30");
+    const targetDate = new Date("2023-06-30");
 
     if (currentDate > targetDate) {
       setDisabled(true);
