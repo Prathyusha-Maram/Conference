@@ -494,7 +494,7 @@ export default function FullWidthTabs() {
                                     </TableCell>
                                     <TableCell>{row.abstract}</TableCell>
                                     <TableCell>
-                                    { row.document !== undefined ? (
+                                    { (row.document !== undefined)&&(row.document !== "") ? (
                                       <Link
                                         to={row.document }
                                         target="_blank"
@@ -506,7 +506,7 @@ export default function FullWidthTabs() {
                                       }
                                     </TableCell>
                                     <TableCell>
-                                      { row.poster !== undefined ? (
+                                      { (row.poster !== undefined)&&(row.poster !== "") ? (
                                         <Link
                                           to={row.poster}
                                           target="_blank"

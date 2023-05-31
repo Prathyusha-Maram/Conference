@@ -2,6 +2,11 @@ import React from 'react'
 import logo from "../../../images/nwconflogo.png"
 import { NavLink, Outlet } from 'react-router-dom'
 const LogoutNavbar = () => {
+
+    const handleVenueClick = () => {
+        window.open('https://www.google.com/maps?q=Northwest%20Missouri%20State%20University');
+    };
+
   return (
     <div>
         
@@ -18,9 +23,9 @@ const LogoutNavbar = () => {
                    <div className='lsit-set'>
                    <li><NavLink to="/" className="nav-link">HOME</NavLink></li>
                    <li> <NavLink to="/ProgramCommity" >PROGRAM COMMITTEE</NavLink></li>
-                   <li> <NavLink to="#" >REGISTRATION</NavLink></li>
-                   <li> <NavLink to="#" >VENUE</NavLink></li>
-                   <li> <NavLink to="#" >CONTACT DETAILS</NavLink></li>
+                   <li> <NavLink to="/register" >REGISTRATION</NavLink></li>
+                   <li> <NavLink to="#" onClick={handleVenueClick}>VENUE</NavLink></li>
+                   <li> <NavLink to="/contact" >CONTACT DETAILS</NavLink></li>
                    {/* <li> <NavLink to="/Accept">ACCEPT</NavLink></li> */}
                    <li>  <NavLink to="/">LOGOUT</NavLink></li>
               

@@ -11,7 +11,7 @@ const corosal = () => {
             <Carousel.Item interval={2000}>
                 <img
                     className="d-block w-100"
-                    height={400}
+                    height={600}
                     src={headerBox}
                     alt="Image One"
                 />
@@ -24,7 +24,7 @@ const corosal = () => {
             <Carousel.Item interval={2000}>
                 <img
                     className="d-block w-100"
-                    height={400}
+                    height={600}
                     src={events}
                     alt="Image Two"
                 />
@@ -36,7 +36,7 @@ const corosal = () => {
             <Carousel.Item interval={2000}>
                 <img
                     className="d-block w-100"
-                    height={400}
+                    height={600}
                     src={headerBox2}
                     alt="Image Two"
                 />

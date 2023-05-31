@@ -200,7 +200,9 @@ const Cards = () => {
                                 <img src={product.image} alt="" />
                                 <div className="sec-img-con">
                                     <p className='sec-p'>{product.title}</p>
-                                    <button className='sec-btn'> {product.content}</button>
+                                    <a href={product.link} target="_blank" >
+                                        <button className='sec-btn'>{product.content}</button>
+                                    </a>
 
                                 </div>
                             </div>
@@ -218,9 +220,9 @@ const Cards = () => {
                        
                         <div className="third-card-image">
                                
-                                <div className="third-img-con">
-                                    <h4 className='third-p'>{product.firstName + " " + product.lastName}</h4>
-                                    <p className='third-btn'> {product.areaOfInterest}</p>
+                                <div className="third-img-con" >
+                                    <h4 className='third-p' style={{fontFamily: "Times New Roman"}}>{product.firstName.toUpperCase() + " " + product.lastName.toUpperCase()}</h4>
+                                    <p className='third-btn' style={{fontFamily: "Times New Roman"}}> {product.areaOfInterest}</p>
 
                                 </div>
                                

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Profile from "../../../images/profileImage.jpg";
 import SubmitNew from "../../../images/newPaper.png";
+import Accept from "../../../images/accept.png";
 import chatNew from "../../../images/chat.png";
 import PaperStatus from "../../../images/editPaper.png";
 import KmowMore from "../../../images/knowMore.jpg";
@@ -102,6 +103,14 @@ const UserLoginPageTab = () => {
                 <img src={SubmitNew} alt="" />
               </div>
               <p>Assign & Evaluate</p>
+            </div>
+          </NavLink>
+          <NavLink to="/Accept">
+            <div className="submit-new">
+              <div className="sub-img">
+                <img src={Accept} alt="" />
+              </div>
+              <p>Accepted Papers</p>
             </div>
           </NavLink>
           {/* <NavLink>

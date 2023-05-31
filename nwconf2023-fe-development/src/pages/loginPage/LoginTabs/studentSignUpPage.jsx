@@ -99,7 +99,7 @@ const StudentSignUpPage = () => {
         <form onSubmit={studentsignup}style={{ display:"flex", flexDirection:"column" }}>
           <div className="nameContainer" style={{ display: 'flex', width:"700px" }}>
           <div style={{flex: 1}}>
-          <label htmlFor="firstName">First Name</label>
+          <label htmlFor="firstName">First Name<span class="required" style={{color:"red"}}>*</span></label>
           <input
             type="text" className={`form-control ${firstNameError ? 'is-invalid' : ''}`} id="firstName"
             placeholder="First Name"
@@ -109,7 +109,7 @@ const StudentSignUpPage = () => {
           {firstNameError && <div className="invalid-feedback">{firstNameError}</div>}
           </div>
           <div style={{ marginLeft: "20px", flex:1 }}>
-          <label htmlFor="lastName">Last Name</label>
+          <label htmlFor="lastName">Last Name<span class="required" style={{color:"red"}}>*</span></label>
           <input
             type="text" className={`form-control ${lastNameError ? 'is-invalid' : ''}`} id="lastName"
             placeholder="Last Name"
@@ -121,7 +121,7 @@ const StudentSignUpPage = () => {
           </div>
           <div className="emailContainer" style={{ display: "flex", width:"700px"}}>
           <div style={{flex: 1}}>
-          <label htmlFor="email">Email Address</label>
+          <label htmlFor="email">Email Address<span class="required" style={{color:"red"}}>*</span></label>
           <input
             type="email" className={`form-control ${emailError ? 'is-invalid' : ''}`} id="email"
             placeholder="Email"
@@ -131,7 +131,7 @@ const StudentSignUpPage = () => {
           {emailError && <div className="invalid-feedback">{emailError}</div>}
           </div>
           <div style={{ marginLeft: "20px", flex:1 }}>
-          <label htmlFor="confirmEmail">Confirm Email Address</label>
+          <label htmlFor="confirmEmail">Confirm Email Address<span class="required" style={{color:"red"}}>*</span></label>
           <input
             type="email" className={`form-control ${confirmEmailError ? 'is-invalid' : ''}`} id="confirmEmail"
             placeholder="Confirm Email"
@@ -143,7 +143,7 @@ const StudentSignUpPage = () => {
           </div>
           <div className="emailContainer" style={{ display: "flex", width:"700px"}}>
           <div style={{flex: 1}}>
-          <label htmlFor="password">Passowrd</label>
+          <label htmlFor="password">Passowrd<span class="required" style={{color:"red"}}>*</span></label>
           <input
             type="password" className={`form-control ${passwordError ? 'is-invalid' : ''}`} id="password"
             placeholder="Password"
@@ -153,7 +153,7 @@ const StudentSignUpPage = () => {
           {passwordError && <div className="invalid-feedback">{passwordError}</div>}
           </div>
           <div style={{ marginLeft: "20px", flex:1 }}>
-          <label htmlFor="confrimPassword">Confirm Passowrd</label>
+          <label htmlFor="confrimPassword">Confirm Passowrd<span class="required" style={{color:"red"}}>*</span></label>
           <input
             type="password" className={`form-control ${confirmPasswordError ? 'is-invalid' : ''}`} id="confirmpassword"
             placeholder="Confirm Password"
@@ -163,7 +163,7 @@ const StudentSignUpPage = () => {
           {confirmPasswordError && <div className="invalid-feedback">{confirmPasswordError}</div>}
           </div>
           </div>
-          <label htmlFor="areaOfIntrest">Area Of Intrest</label>
+          <label htmlFor="areaOfIntrest">Area Of Intrest<span class="required" style={{color:"red"}}>*</span></label>
           <input
             type="text" className={`form-control ${interestsError ? 'is-invalid' : ''}`} id="interests"
             placeholder="Area Of Intrest"

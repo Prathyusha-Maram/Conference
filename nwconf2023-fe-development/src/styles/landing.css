@@ -12,6 +12,25 @@
     font-size: 14px;
     text-decoration: none;
 } */
+.contact {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer1 {
+    /* width: 100%;
+    height: 30px;
+    background-color: var(--green);
+    position: relative;; */
+    padding-bottom: 30px;
+    position: relative;
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    background-size: cover;
+}
 
 .logo-data {
     display: flex;
@@ -26,7 +45,7 @@
     justify-content: space-between;
     padding-right: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    
+
 }
 
 .logo-data-img {
@@ -80,6 +99,10 @@ li .active {
     /* box-shadow: 7px -4px 5px -1px rgba(0, 0, 0, 0.29); */
     padding: 15px;
     border-radius: 5px;
+}
+
+.contact h3 {
+    font-family: 'Times New Roman', Arial;
 }
 
 @media (min-width:660px) {
@@ -145,6 +168,7 @@ li .active {
 
 .heading1 {
     text-align: center;
+    margin-top: 20px;
 }
 
 .heading:hover::after {
@@ -291,7 +315,8 @@ li .active {
     align-items: center;
 
 }
-.login-container{
+
+.login-container {
     display: flex;
     background: url(../images/headerBox1.jpg);
     justify-content: center;
@@ -316,12 +341,12 @@ li .active {
 }
 
 .login-input-con input {
-    width:300px;
+    width: 300px;
     margin: 0px 0px 10px 0px;
     padding: 5px 0px 5px 10px;
     border: '1px solid #ccc';
     border-radius: '4px';
-    outline:#000;
+    outline: #000;
 }
 
 .login-con {
@@ -386,6 +411,7 @@ li .active {
     border-radius: 0.375rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 .form-btn-con {
     display: flex;
     justify-content: end;
@@ -434,6 +460,7 @@ li .active {
     display: flex;
     position: relative;
 }
+
 .review-card-new {
 
     justify-content: space-around;
@@ -442,15 +469,15 @@ li .active {
     position: relative;
 }
 
-.guestContainer{
+.guestContainer {
 
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 30vh;
-     /* background-image: url("../images/bg6.jpg"); */
-     background-size: cover;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    /* background-image: url("../images/bg6.jpg"); */
+    background-size: cover;
+}
 
 .review-container {
     font-weight: 800;
@@ -473,15 +500,15 @@ li .active {
 
 .review-btn-con {
 
-margin-left: 130px;
+    margin-left: 130px;
 }
 
 .footer-conatiner {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
-    
-    
+
+
 }
 
 .title {
@@ -551,7 +578,7 @@ margin-left: 130px;
     color: black !important;
 }
 
-.loginBtn a{
+.loginBtn a {
     /* width: 500px; */
     text-decoration: none;
     color: black;
@@ -563,12 +590,14 @@ margin-left: 130px;
     transition: all 0.2s ease;
 
 }
-.loginBtn::before{
+
+.loginBtn::before {
     content: " ";
     position: absolute;
     background-color: #006747;
 }
-.loginBtn a:hover{
+
+.loginBtn a:hover {
     color: #fff;
     background-color: #006747;
 }
@@ -583,7 +612,7 @@ margin-left: 130px;
 .assign-cardNew {
     display: flex;
     justify-content: space-around;
-    width:fit-content;
+    width: fit-content;
     margin-left: 50px;
     padding: 5px 0px;
     border-radius: 5px;
@@ -604,7 +633,7 @@ margin-left: 130px;
     border-radius: 6rem;
 }
 
-.InfoHeading{
+.InfoHeading {
     font-weight: bolder;
 }
 
@@ -612,7 +641,7 @@ margin-left: 130px;
     display: flex;
     padding: 15px 30px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    
+
     height: 55vh;
     border-radius: 20px;
     align-items: center;
@@ -632,20 +661,22 @@ margin-left: 130px;
 .submit-new img {
     width: 60px;
     height: 60px;
-   
+
 }
 
-.optionContainer{
+.optionContainer {
     margin: 5rem 8rem;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 1.5rem;
 }
+
 .submit-new {
-    width:20rem;
+    width: 20rem;
     height: 55vh;
     justify-content: space-around;
 }
+
 .user-pag-con {
     display: flex;
     justify-content: space-between;
@@ -669,7 +700,7 @@ margin-left: 130px;
     /* color: #fff;
     background-color: #006747; */
     height: 120px;
-   
+
 }
 
 .edit-profile-btn {
@@ -689,140 +720,158 @@ margin-left: 130px;
 }
 
 .approved {
- color: white;
+    color: white;
     background-color: #006747;
     padding: 4px 20px;
     border-radius: 6px;
-    width:fit-content;
+    width: fit-content;
     text-align: center;
 }
-.staus-wrap{
+
+.staus-wrap {
     display: flex;
     width: 100%;
     /* justify-content: space-between; */
 }
+
 .button-container {
     display: flex;
     align-items: center;
-  }
-  .button-container button {
+}
+
+.button-container button {
     margin-right: 10px;
-  }
-.status-card{
- padding: 15px 0px;
+}
+
+.status-card {
+    padding: 15px 0px;
 
 }
-.status-card p{
+
+.status-card p {
     padding: 5px 0px;
 }
-.wrap-btn{
+
+.wrap-btn {
     display: flex;
     justify-content: end;
     padding: 8px 10px;
 }
-.marks-con{
+
+.marks-con {
     display: flex;
     justify-content: end;
     margin: 0px 30px;
 }
-.marks-con p{
+
+.marks-con p {
     margin: 0px 20px !important;
 }
-.assign-card li{
+
+.assign-card li {
     width: 300px !important;
 }
 
 .table {
-   
+
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  .td, .th {
+}
+
+.td,
+.th {
     border: 1px solid black;
     text-align: left;
     padding: 0px 8px;
-  }
-  
-  /* tr:nth-child(even) {
+}
+
+/* tr:nth-child(even) {
     background-color: #dddddd;
   } */
-  .tr, .td:first-child{
-width: 500px !important;
-  }
-  .tr, .td:last-child{
+.tr,
+.td:first-child {
     width: 500px !important;
-      }
-    
-      .review-card{
-        margin-top: 200px;
-      }
-      .tr, .td:nth-child(2){
-        width: 200px !important;
-          }
-        
-          .tr, .td{
-            border: 1px solid black !important; 
-          }
+}
 
-          .td input{
-            width: 100% !important;
-          }
-          .user-postt{
-            padding: 10px;
-            /* box-shadow: rgba(0, 0, 0, 0.9) 0px 4px 12px; */
-            margin-bottom: 20px;
-          }
-          .user-postt p{
-            padding: 10px 0px;
-          }
+.tr,
+.td:last-child {
+    width: 500px !important;
+}
+
+.review-card {
+    margin-top: 200px;
+}
+
+.tr,
+.td:nth-child(2) {
+    width: 200px !important;
+}
+
+.tr,
+.td {
+    border: 1px solid black !important;
+}
+
+.td input {
+    width: 100% !important;
+}
+
+.user-postt {
+    padding: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.9) 0px 4px 12px; */
+    margin-bottom: 20px;
+}
+
+.user-postt p {
+    padding: 10px 0px;
+}
 
 /* Styling for the chat container */
 .chat-container {
     max-height: 400px;
     overflow-y: auto;
     padding: 10px;
-  }
-  
-  /* Styling for each chat message */
-  .message {
+}
+
+/* Styling for each chat message */
+.message {
     margin-bottom: 10px;
     padding: 5px;
     border-radius: 8px;
     max-width: 80%;
-  }
-  
-  /* Styling for sender and user messages */
-  .sender {
+}
+
+/* Styling for sender and user messages */
+.sender {
     font-weight: bold;
     margin-right: 5px;
-  }
-  
-  .user {
+}
+
+.user {
     background-color: #dcf8c6;
     color: #000;
-  }
-  
-  .bot {
+}
+
+.bot {
     background-color: #f5f5f5;
     color: #000;
-  }
-  
-  /* Styling for the chat input form */
-  form {
+}
+
+/* Styling for the chat input form */
+form {
     margin-top: 10px;
     display: flex;
-  }
-  
-  input[type="text"] {
+}
+
+input[type="text"] {
     flex-grow: 1;
     padding: 10px;
     border: none;
     border-radius: 20px;
     outline: none;
-  }
-  
-  button[type="submit"] {
+}
+
+button[type="submit"] {
     margin-left: 10px;
     background-color: #25D366;
     border: none;
@@ -835,4 +884,4 @@ width: 500px !important;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-  }
+}
