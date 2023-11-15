@@ -26,6 +26,7 @@
     "react-swipeable-views": "^0.14.0",
     "react-toastify": "^9.1.2",
     "web-vitals": "^2.1.4",
+    "@babel/plugin-proposal-private-property-in-object": "^1.0.0",
     "react-paypal-button-v2": "^2.6.3"
   },
   "scripts": {
