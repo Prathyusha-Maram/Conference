@@ -1,11 +1,11 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import logo from "../../../images/logo.jpg"
-import bfb from "../../../images/fb-b-new.png"
-import blinkdin from "../../../images/linkdin-black.png"
-import bmessage from "../../../images/message-balck.png"
-import youtube from "../../../images/youtube-black.png"
-import insta from "../../../images/insta-black.png"
+// import bfb from "../../../images/fb-b-new.png"
+// import blinkdin from "../../../images/linkdin-black.png"
+// import bmessage from "../../../images/message-balck.png"
+// import youtube from "../../../images/youtube-black.png"
+// import insta from "../../../images/insta-black.png"
 const footer = () => {
   return (
     <div>

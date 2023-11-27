@@ -13,7 +13,7 @@ const corosal = () => {
                     className="d-block w-100"
                     height={600}
                     src={headerBox}
-                    // alt="Image One"
+                    alt=" "
                 />
                 <Carousel.Caption>
                     <h3>Welcome to NWConf2023</h3>
@@ -26,7 +26,7 @@ const corosal = () => {
                     className="d-block w-100"
                     height={600}
                     src={events}
-                    // alt="Image Two"
+                    alt=" "
                 />
                 <Carousel.Caption>
                     <h3>Register for an event</h3>
@@ -38,12 +38,23 @@ const corosal = () => {
                     className="d-block w-100"
                     height={600}
                     src={headerBox2}
-                    // alt="Image Two"
+                    alt=" "
                 />
                 <Carousel.Caption>
                     <h3>Check out the deadlines</h3>
 
-                    <p>Click <a href="#">here</a> to know the deadlines</p>
+                    {/* <p>Click <link href="#">here</link> to know the deadlines</p> */}
+                    <button
+                        type="button"
+                        onClick={() => {
+                        // Handle your click logic here
+                        // For example, show deadlines or trigger some other functionality
+                        console.log('Clicked! Show deadlines or trigger other functionality.');
+                    }}
+                    >
+                        Click here to know the deadlines
+                    </button>
+
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel></div>
