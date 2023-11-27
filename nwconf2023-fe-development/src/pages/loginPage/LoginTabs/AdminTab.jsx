@@ -1,21 +1,21 @@
 import React, { useState } from "react";
-import Profile from "../../../images/profileImage.jpg";
-import SubmitNew from "../../../images/newPaper.png";
 import Accept from "../../../images/accept.png";
-import chatNew from "../../../images/chat.png";
-import PaperStatus from "../../../images/editPaper.png";
-import KmowMore from "../../../images/knowMore.jpg";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import "../../../styles/landing.css";
+import SubmitNew from "../../../images/newPaper.png";
+import Profile from "../../../images/profileImage.jpg";
+// import chatNew from "../../../images/chat.png";
+// import PaperStatus from "../../../images/editPaper.png";
+// import KmowMore from "../../../images/knowMore.jpg";
 import axios from "axios";
-import { API_ENDPOINT } from "../../../constant/constant";
 import { useEffect } from "react";
 import Modal from "react-modal";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { API_ENDPOINT } from "../../../constant/constant";
+import "../../../styles/landing.css";
 import ModalContent from "../components/modalContent";
 const UserLoginPageTab = () => {
   const { state } = useLocation();
   const [userDatas, setUserDatas] = useState();
-  const [disabled, setDisabled] = useState(true);
+  // const [disabled, setDisabled] = useState(true);
   const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [conversation, setConversation] = useState([]);
@@ -25,9 +25,9 @@ const UserLoginPageTab = () => {
       token: localStorage.getItem("Usertoken"),
     },
   });
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
+  // const openModal = () => {
+  //   setIsModalOpen(true);
+  // };
 
   const closeModal = () => {
     setIsModalOpen(false);

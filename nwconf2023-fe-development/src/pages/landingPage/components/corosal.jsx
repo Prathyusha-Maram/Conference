@@ -1,9 +1,9 @@
-import React from 'react'
-import headerBox from "../../../images/headerBox.jpg"
-import headerBox2 from "../../../images/headerBox2.jpg"
-import events from "../../../images/events.jpg"
-import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css';
+import React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import events from "../../../images/events.jpg";
+import headerBox from "../../../images/headerBox.jpg";
+import headerBox2 from "../../../images/headerBox2.jpg";
 const corosal = () => {
     return (
         <div>        
@@ -13,7 +13,7 @@ const corosal = () => {
                     className="d-block w-100"
                     height={600}
                     src={headerBox}
-                    alt="Image One"
+                    // alt="Image One"
                 />
                 <Carousel.Caption>
                     <h3>Welcome to NWConf2023</h3>
@@ -26,7 +26,7 @@ const corosal = () => {
                     className="d-block w-100"
                     height={600}
                     src={events}
-                    alt="Image Two"
+                    // alt="Image Two"
                 />
                 <Carousel.Caption>
                     <h3>Register for an event</h3>
@@ -38,7 +38,7 @@ const corosal = () => {
                     className="d-block w-100"
                     height={600}
                     src={headerBox2}
-                    alt="Image Two"
+                    // alt="Image Two"
                 />
                 <Carousel.Caption>
                     <h3>Check out the deadlines</h3>

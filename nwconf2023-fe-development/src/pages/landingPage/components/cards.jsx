@@ -1,27 +1,27 @@
 // import React from 'react'
 // import { useState, useEffect} from "react";
-import React, { useState, useEffect } from "react";
 import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { API_ENDPOINT } from "../../../constant/constant";
-import Cloudcomputing from "../../../images/cloudcomputing.png"
-import BlockChain from "../../../images/blockchain.jpg"
-import BigData from "../../../images/bigdata.jpg"
-import Cryptography from "../../../images/cyrptography.jpg"
-import SoftwareEngineering from "../../../images/software.jpg"
-import MachineLearning from "../../../images/machinelearning.png"
-import DataAnalytics from "../../../images/analytics.jpg"
-import CyberSecurity from "../../../images/cyber.jpg"
-import Derik from "../../../images/pf1.jpg"
-import Jamal from "../../../images/pf2.jpg"
-import Tessie from "../../../images/pf3.jpg"
-import Jay from "../../../images/pf4.jpg"
-import Amanda from "../../../images/pf5.jpg"
-import Brooke from "../../../images/pf6.jpg"
-import Elon from "../../../images/pf7.jpg"
-import BillGates from "../../../images/speaker.jpg"
-import Fb from "../../../images/fb.png"
-import Linkdin from "../../../images/linkdin.png"
-import Msg from "../../../images/msg.png"
+import DataAnalytics from "../../../images/analytics.jpg";
+import BigData from "../../../images/bigdata.jpg";
+import BlockChain from "../../../images/blockchain.jpg";
+import Cloudcomputing from "../../../images/cloudcomputing.png";
+import CyberSecurity from "../../../images/cyber.jpg";
+import Cryptography from "../../../images/cyrptography.jpg";
+import MachineLearning from "../../../images/machinelearning.png";
+import SoftwareEngineering from "../../../images/software.jpg";
+// import Derik from "../../../images/pf1.jpg"
+// import Jamal from "../../../images/pf2.jpg"
+// import Tessie from "../../../images/pf3.jpg"
+// import Jay from "../../../images/pf4.jpg"
+// import Amanda from "../../../images/pf5.jpg"
+// import Brooke from "../../../images/pf6.jpg"
+// import Elon from "../../../images/pf7.jpg"
+// import BillGates from "../../../images/speaker.jpg"
+// import Fb from "../../../images/fb.png"
+// import Linkdin from "../../../images/linkdin.png"
+// import Msg from "../../../images/msg.png"
 const Cards = () => {
 
     const [reviewerEmail, setReviewerDetails] = useState([]);
@@ -200,7 +200,7 @@ const Cards = () => {
                                 <img src={product.image} alt="" />
                                 <div className="sec-img-con">
                                     <p className='sec-p'>{product.title}</p>
-                                    <a href={product.link} target="_blank" >
+                                    <a href={product.link} target="_blank" rel="noreferrer">
                                         <button className='sec-btn'>{product.content}</button>
                                     </a>
 
