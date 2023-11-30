@@ -55,7 +55,8 @@ const UserLoginPageTab = () => {
 
   useEffect(() => {
     GetApi();
-  }, []);
+  }, [GetApi]);
+  
 
   function checkStatus() {
     navigate("/checkStatus", { state: userDatas });

@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Select from "react-select";
-import { colourOptions } from "../sampleData/data";
 import { API_ENDPOINT } from "../../../constant/constant";
+import { colourOptions } from "../sampleData/data";
 
 import axios from "axios";
 
@@ -288,7 +288,7 @@ const SubmitPaperPage = () => {
 
         <label htmlFor="" style={{ color: "white" }}>
           {" "}
-          Upload your Paper{" "}Camera Ready Template Format{" "}<a href="https://res.cloudinary.com/dd1uzjqg8/raw/upload/v1684623035/CameraReadyTemplate_j41fpr.docx">DOCX</a>{" "}<a href="https://res.cloudinary.com/dd1uzjqg8/image/upload/v1684623091/CameraReadyTemplate_tut5sj.pdf" target="_blank">PDF</a>
+          Upload your Paper{" "}Camera Ready Template Format{" "}<a href="https://res.cloudinary.com/dd1uzjqg8/raw/upload/v1684623035/CameraReadyTemplate_j41fpr.docx">DOCX</a>{" "}<a href="https://res.cloudinary.com/dd1uzjqg8/image/upload/v1684623091/CameraReadyTemplate_tut5sj.pdf" target="_blank" rel="noreferrer">PDF</a>
           <h4 style={{ color: "red" }}>{loading ? "loading" : ""}</h4>
         </label>
         <input

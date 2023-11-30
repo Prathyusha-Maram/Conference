@@ -1,14 +1,13 @@
-import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
-import SwipeableViews from "react-swipeable-views";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
-import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import { AssigendPapers } from "../sampleData/adminAssignPaperData";
-import { useNavigate, useLocation } from "react-router-dom";
+import Tab from "@material-ui/core/Tab";
+import Tabs from "@material-ui/core/Tabs";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
+import PropTypes from "prop-types";
+import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import SwipeableViews from "react-swipeable-views";
 import { API_ENDPOINT } from "../../../constant/constant";
 
 import Paper from "@mui/material/Paper";
@@ -171,7 +170,7 @@ export default function FullWidthTabs() {
         setFilteredReviewTable(newArray);
         setreviewerTableDetail(response.data.project);
       });
-  }, []);
+  }, [myReviewerheader, reviewerEmail]);
 
   const handleChangeIndex = (index) => {
     setValue(index);
